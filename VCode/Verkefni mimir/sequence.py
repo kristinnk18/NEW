@@ -13,3 +13,9 @@
 # Push your changes to the remote repo with: git push
 # Inspect your commits on github 
 
+# Summan af síðustu þrem tölum sem settar eru inn.
+# 1 + 2 + 3 = 6
+# 3 + 6 + 11 = 20
+# 6 + 11 + 20 = 37
+ 
+
