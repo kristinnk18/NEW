@@ -1,4 +1,11 @@
-rib_111 = trib((1, 1, 1))
 
-for _ in range(10):
-    print next(trib_111)
+n = int(input("Enter the length of the sequence: "))
+
+a= [1,2,3]
+
+for i in range(n-3):
+    sum=0
+    for j in a[-3:]:
+        sum+=j
+    a.append(sum)
+print(a)
