@@ -50,6 +50,26 @@ print(how_many)        # Prentar hversu margir stafir eru í a_str: "4"
 print("Sorry, is this the {} minute {}?".format(5, 'ARGUMENT')) 
     #Prentar " Sorry, is this the 5 minute ARGUMENT?"
 
+for i in range(5):
+    print("{:10d} --> {:4d}" .format(i,i**2))   
+    
+        #  0  -->   0
+        #  1  -->   1
+        #  2  -->   4
+        #  3  -->   9
+        #  4  -->   16
+
+
+#________________________________________________________________________________________________________
+
+
+name = "Kristinn Örn Kristinsson"
+first, middle, last = name.split() # splittar upp nafninu minu
+transformed = last + ", " + first + " " + middle
+
+print(middle)           # prentar "Örn"
+print(transformed)      # Prentar "Kristinsson, Kristinn Örn"   
+
 
 
 
