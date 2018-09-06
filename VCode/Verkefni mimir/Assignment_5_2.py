@@ -13,6 +13,12 @@
 # Push your changes to the remote repo with: git push
 # Inspect your commits on github
 
+# Summan af síðustu þrem tölum sem settar eru inn.
+# 1 + 2 + 3 = 6
+# 3 + 6 + 11 = 20
+# 6 + 11 + 20 = 37
+
+
 n = int(input("Enter the length of the sequence: ")) # Do not change this line
 
 sum_1 = 1
@@ -27,3 +33,5 @@ for x in range(n):
     print(sum_new)
     sum_new_2 = sum_new + sum_3
     print(sum_new_2)
+
+    
