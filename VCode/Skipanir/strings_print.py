@@ -71,6 +71,9 @@ print(middle)           # prentar "Örn"
 print(transformed)      # Prentar "Kristinsson, Kristinn Örn"   
 
 
+print("hello"[::-1])  # Prentar "hello" backwards. : "olleh"
+
+
 
 
 

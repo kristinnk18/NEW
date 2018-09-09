@@ -11,9 +11,8 @@
 # the output will be
 # M. Ghandi
 
-# name = input("Input a name: ")
+name = input("Input a name: ")
 
-name = "ghandi, mahatma"
 last, first = name.split()
 transformed = first[0].upper() + ". " + last[0].upper() + last[1:-1]
 
