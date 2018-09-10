@@ -14,6 +14,21 @@ if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):
 else:
     print (False)
 
+#_______________________ Lausn kennara _______________________________
+
+year = int(input("Input a year: ")) # Do not change this line
+
+is_leap_year = False
+
+if (year % 4 == 0):
+    if (year % 100 == 0):
+        if (year % 400 == 0):
+            is_leap_year = True
+    else:
+        is_leap_year = True
+
+print(is_leap_year)
+
 # Fill in the missing code below
 
 # % Þýðir evendly divisible: deilandlegt með 4 í sletta tölu.
