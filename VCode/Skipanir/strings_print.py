@@ -74,6 +74,19 @@ print(transformed)      # Prentar "Kristinsson, Kristinn Örn"
 print("hello"[::-1])  # Prentar "hello" backwards. : "olleh"
 
 
+#__________________________________________________________________________________________________________
+
+for i in sentence:
+    if i.isupper():             #upper case letter
+        Upper_count += 1
+    if i.isdigit():             # tölustafir
+        digit_count +=1
+    if i.islower():             #lower case letter
+        lower_count += 1
+    if i in punct:              #kommur og aukastafir:: punct = '''!()-[]{};:'",<>\./?@#$%^&*_~'''
+        punctuation_count += 1
+
+
 
 
 

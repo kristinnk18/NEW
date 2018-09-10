@@ -21,7 +21,7 @@ Upper_count = 0
 digit_count = 0
 lower_count = 0
 punctuation_count = 0
-punct = '''!()-[]{};:'"\,<>./?@#$%^&*_~'''
+punct = '''!()-[]{};:'",<>\./?@#$%^&*_~'''
 
 for i in sentence:
     if i.isupper():

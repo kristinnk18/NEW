@@ -14,9 +14,9 @@
 
 s = input("Input a string: ")
 
-target = "o" 
+target = "o"                        # finna hvar "o" er i setningu
 
-for index, letter in enumerate(s):
+for index, letter in enumerate(s):  #index list (s)
     if letter == target: 
         print(index)
 

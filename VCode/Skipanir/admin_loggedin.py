@@ -1,7 +1,7 @@
 
 
 user = "admin"
-logged_in = False
+logged_in = True
 
 if user == "admin" and logged_in:
     print("Logged in")
