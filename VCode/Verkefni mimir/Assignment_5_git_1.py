@@ -27,4 +27,4 @@ while num_int >= 0:
     list.append (num_int)
     max_int = max(list)
 else:
-    print("The maximum is", max_int)    # Do not change this line
+    print("The maximum is: ", max_int)    # Do not change this line

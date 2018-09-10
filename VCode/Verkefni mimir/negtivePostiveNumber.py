@@ -5,4 +5,4 @@ if num <= -1:
 elif num >= 1:
     print("Positive") # Do not change this line
 else:
-    print("Zero") # Do not change this line
+    print("Zero") # Do not change this lineö
