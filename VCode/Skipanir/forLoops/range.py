@@ -10,5 +10,5 @@
 
 num = int(input("Input an int: "))
 
-for i in range(1, num):
+for i in range(1, num + num , 2):
     print(i)
