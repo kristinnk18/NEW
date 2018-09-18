@@ -1,26 +1,27 @@
-north = "n"
-south = "s"
-west = "w"
-east = "e"
-end = 3_1
+# https://github.com/kristinnk18/NEW
+
 start = 1_1
 notvalid = "Not a valid direction!"
 
 
 
+
 while True:
     if start == 1_1:
-        print("you can travel: (N)orth.")
-        direction = input("direction: ")
+        print("You can travel: (N)orth.")
+        direction = input("Direction: ").lower()
+        while direction != "n":
+            print(notvalid)
+            direction = input("Direction: ").lower()
         if direction == "n":
             start = 1_2
-        else:
-            print(notvalid)
-            start = 1_1
 
     if start == 1_2:
-        print("you can travel: (N)orth or (E)ast or (S)outh.")
-        direction = input("direction: ")
+        print("You can travel: (N)orth or (E)ast or (S)outh.")
+        direction = input("Direction: ").lower()
+        while direction not in {"n","e","s"}:
+            print(notvalid)
+            direction = input("Direction: ").lower()
         if direction == "n":
             start = 1_3
         elif direction == "s":
@@ -32,8 +33,11 @@ while True:
             start = 1_2
 
     if start == 1_3:
-        print("you can travel:(E)ast or (S)outh.")
-        direction = input("direction: ")
+        print("You can travel: (E)ast or (S)outh.")
+        direction = input("Direction: ").lower()
+        while direction not in {"e","s"}:
+            print(notvalid)
+            direction = input("Direction: ").lower()
         if direction == "e":
             start = 2_3
         elif direction == "s":
@@ -43,8 +47,11 @@ while True:
             start = 1_3
 
     if start == 2_1:
-        print("you can travel:(N)orth.")
-        direction = input("direction: ")
+        print("You can travel: (N)orth.")
+        direction = input("Direction: ").lower()
+        while direction not in {"n"}:
+            print(notvalid)
+            direction = input("Direction: ").lower()
         if direction == "n":
             start = 2_2
         else:
@@ -52,8 +59,11 @@ while True:
             start = 2_1
 
     if start == 2_2:
-        print("you can travel:(W)est or (S)outh.")
-        direction = input("direction: ")
+        print("You can travel: (W)est or (S)outh.")
+        direction = input("Direction: ").lower()
+        while direction not in {"w","s"}:
+            print(notvalid)
+            direction = input("Direction: ").lower()
         if direction == "w":
             start = 1_2
         elif direction == "s":
@@ -63,8 +73,11 @@ while True:
             start = 2_2
 
     if start == 2_3:
-        print("you can travel:(W)est or (E)ast")
-        direction = input("direction: ")
+        print("You can travel: (E)ast or (W)est.")
+        direction = input("Direction: ").lower()
+        while direction not in {"e","w"}:
+            print(notvalid)
+            direction = input("Direction: ").lower()
         if direction == "w":
             start = 1_3
         elif direction == "e":
@@ -74,12 +87,15 @@ while True:
             start = 2_3
 
     if start == 3_1:
-        print("Vctory!")
+        print("Victory!")
         break
 
     if start == 3_2:
-        print("you can travel:(N)orth or (S)outh.")
-        direction = input("direction: ")
+        print("You can travel: (N)orth or (S)outh.")
+        direction = input("Direction: ").lower()
+        while direction not in {"n","s"}:
+            print(notvalid)
+            direction = input("Direction: ").lower()
         if direction == "n":
             start = 3_3
         elif direction == "s":
@@ -89,8 +105,11 @@ while True:
             start = 3_2
 
     if start == 3_3:
-        print("you can travel:(W)est or (S)outh.")
-        direction = input("direction: ")
+        print("You can travel: (W)est or (S)south.")
+        direction = input("Direction: ").lower()
+        while direction not in {"w","s"}:
+            print(notvalid)
+            direction = input("Direction: ").lower()
         if direction == "s":
             start = 3_2
         elif direction == "w":
