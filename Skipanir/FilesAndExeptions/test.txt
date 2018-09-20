@@ -1,1 +1,2 @@
-Kiddi
+This is a test file, for chapter 06.
+This a new line in the file!
