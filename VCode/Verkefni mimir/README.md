@@ -1,4 +1,0 @@
-# verkefni
-# verkefni
-# verkefni
-# verkefni
