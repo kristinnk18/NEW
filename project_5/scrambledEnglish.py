@@ -10,27 +10,31 @@ def get_word_string(filename):
             word = word.split()
         return word
     except FileNotFoundError:
-        print("File X not found")
+        print("File {} not found".format(filename))
     return wordString
 
 def scramble_string(string):
     chars = []
     for word in string:
+        if len(word) <= 1:
+            chars.append(word)
+            continue
         new_word = []
         wordlist = list(word)
-        first, mid, last = wordlist[0], wordlist[1:-1], wordlist[-1]
+        if "," in wordlist or "." in wordlist:
+            first, mid, last = wordlist[0], wordlist[1:-2], wordlist[-2:]
+        else:
+            first, mid, last = wordlist[0], wordlist[1:-1], wordlist[-1]
         random.shuffle(mid)
         new_word.append(first)
         for x in mid:
             new_word.append(x)
-        new_word.append(last)
+        for x in last:
+            new_word.append(x)
         new_word = ''.join(new_word)
         chars.append(new_word)
 
     sentence = " ".join(chars)
-#         word_list = [['obytay'], ['ikeslay'], ['ishay'], ['artway']]
-# >>> print ' '.join(word[0] for word in word_list)
-# obytay ikeslay ishay artway
 
     return sentence
 

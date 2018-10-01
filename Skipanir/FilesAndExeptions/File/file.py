@@ -1,7 +1,7 @@
 file_content = open("test.txt", "r", encoding="utf-8")
 
 for word in file_content:
-    print(word,end="")
+    print(word.split())
 
 file_content.close()
 

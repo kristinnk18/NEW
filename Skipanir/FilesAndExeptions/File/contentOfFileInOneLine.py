@@ -18,9 +18,9 @@ with open("test.txt", "r") as file_content:
 
 ############################# Önnur Utgafa ########################
 
-file_content = open("test.txt", "r")
+# file_content = open("test.txt", "r")
 
-for word in file_content:
-    print(word.replace(" ", "").strip("\n"), end="")
+# for word in file_content:
+#     print(word.replace(" ", "").strip("\n"), end="")
 
-file_content.close()
+# file_content.close()
